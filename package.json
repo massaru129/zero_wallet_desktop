@@ -1,0 +1,40 @@
+{
+  "name": "zero_wallet_desktop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "electron ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/massaru129/zero_wallet_desktop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/massaru129/zero_wallet_desktop/issues"
+  },
+  "homepage": "https://github.com/massaru129/zero_wallet_desktop#readme",
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-redux": "^7.1.1",
+    "redux": "^4.0.4",
+    "styled-components": "^4.3.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.2",
+    "@types/redux": "^3.6.0",
+    "electron": "^6.0.7",
+    "ts-loader": "^6.0.4",
+    "tslint": "^5.19.0",
+    "tslint-loader": "^3.5.4",
+    "typescript": "^3.6.2",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
+}
