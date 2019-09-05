@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
     target: 'electron-renderer',
-    entry: './ts/index.tsx',
+    entry: './src/ts/index.tsx',
     cache: true,
     mode: 'development', // "production" | "development" | "none"
     devtool: 'source-map',
@@ -32,4 +32,3 @@ module.exports = {
         ]
     },
 };
-

@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./ts/index.tsx");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/ts/index.tsx");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -29287,10 +29287,10 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./ts/index.tsx":
-/*!**********************!*\
-  !*** ./ts/index.tsx ***!
-  \**********************/
+/***/ "./src/ts/index.tsx":
+/*!**************************!*\
+  !*** ./src/ts/index.tsx ***!
+  \**************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -29303,8 +29303,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const react_1 = __importDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
 const react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js"));
 const container = document.getElementById('contents');
-react_dom_1.default.render(react_1.default.createElement("p", null, "\u3053\u3093\u306B\u3061\u306F\u3001\u4E16\u754C"), container);
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi90c3gvIiwic291cmNlcyI6WyJpbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQSxrREFBMEI7QUFDMUIsMERBQWlDO0FBRWpDLE1BQU0sU0FBUyxHQUFHLFFBQVEsQ0FBQyxjQUFjLENBQUMsVUFBVSxDQUFDLENBQUM7QUFFdEQsbUJBQVEsQ0FBQyxNQUFNLENBQ1gsNEZBQWUsRUFDZixTQUFTLENBQ1osQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgUmVhY3REb20gZnJvbSAncmVhY3QtZG9tJztcblxuY29uc3QgY29udGFpbmVyID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2NvbnRlbnRzJyk7XG5cblJlYWN0RG9tLnJlbmRlcihcbiAgICA8cD7jgZPjgpPjgavjgaHjga/jgIHkuJbnlYw8L3A+LFxuICAgIGNvbnRhaW5lcixcbik7XG4iXX0=
+react_dom_1.default.render(react_1.default.createElement("p", null, "Hello, Zerochain!!!!"), container);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi90c3gvIiwic291cmNlcyI6WyJpbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQSxrREFBMEI7QUFDMUIsMERBQWlDO0FBRWpDLE1BQU0sU0FBUyxHQUFHLFFBQVEsQ0FBQyxjQUFjLENBQUMsVUFBVSxDQUFDLENBQUM7QUFFdEQsbUJBQVEsQ0FBQyxNQUFNLENBQ1gsZ0VBQTJCLEVBQzNCLFNBQVMsQ0FDWixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBSZWFjdERvbSBmcm9tICdyZWFjdC1kb20nO1xuXG5jb25zdCBjb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY29udGVudHMnKTtcblxuUmVhY3REb20ucmVuZGVyKFxuICAgIDxwPkhlbGxvLCBaZXJvY2hhaW4hISEhPC9wPixcbiAgICBjb250YWluZXIsXG4pO1xuIl19
 
 /***/ })
 
