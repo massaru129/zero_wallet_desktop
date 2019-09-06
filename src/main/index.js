@@ -2,8 +2,10 @@ const {
     app,
     BrowserWindow
 } = require('electron')
-// const zerochain = require('zerochain')
-// console.log(zerochain.hoge());
+const zerochain = require('../../zerochain');
+console.log(zerochain.hoge(), " from main process")
+
+
 let win
 
 if (module.hot) {

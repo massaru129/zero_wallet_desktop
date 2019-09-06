@@ -81,79 +81,30 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/main/index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/zerochain/lib/index.js":
-/*!*********************************************!*\
-  !*** ./node_modules/zerochain/lib/index.js ***!
-  \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-const addon = __webpack_require__(/*! ../native/index.node */ "./node_modules/zerochain/native/index.node");
-module.exports = addon;
-
-
-/***/ }),
-
-/***/ "./node_modules/zerochain/native/index.node":
-/*!**************************************************!*\
-  !*** ./node_modules/zerochain/native/index.node ***!
-  \**************************************************/
+/***/ "../../zerochain":
+/*!*****************************************!*\
+  !*** external "require('./zerochain')" ***!
+  \*****************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-throw new Error("Module parse failed: Unexpected character '�' (1:0)\nYou may need an appropriate loader to handle this file type, currently no loaders are configured to process this file. See https://webpack.js.org/concepts#loaders\n(Source code omitted for this binary file)");
+eval("module.exports = require('./zerochain');\n\n//# sourceURL=webpack:///external_%22require('./zerochain')%22?");
 
 /***/ }),
 
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
+/***/ "./src/main/index.js":
+/*!***************************!*\
+  !*** ./src/main/index.js ***!
+  \***************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-const {
-    app,
-    BrowserWindow
-} = __webpack_require__(/*! electron */ "electron")
-const zerochain = __webpack_require__(/*! zerochain */ "./node_modules/zerochain/lib/index.js")
-console.log(zerochain.hoge());
-let win
-
-function createWindow() {
-    win = new BrowserWindow({
-        width: 1080,
-        height: 720,
-        webPreferences: { nodeIntegration: true }
-    })
-    win.loadFile('index.html')
-    if (process.argv.find((arg) => arg === '--debug')) {
-        win.webContents.openDevTools()
-    }
-    win.on('closed', () => {
-        win = null
-    })
-}
-
-app.on('ready', createWindow)
-
-app.on('window-all-closed', () => {
-    if (process.platform !== 'darwin') {
-        app.quit()
-    }
-});
-
-app.on('activate', () => {
-    if (win === null) {
-        createWindow()
-    }
-});
-
+eval("const {\n    app,\n    BrowserWindow\n} = __webpack_require__(/*! electron */ \"electron\")\nconst zerochain = __webpack_require__(/*! ../../zerochain */ \"../../zerochain\");\nconsole.log(zerochain.hoge(), \" from main process\")\n\n\nlet win\n\nif (false) {}\n\nfunction createWindow() {\n    win = new BrowserWindow({\n        width: 1080,\n        height: 720,\n        webPreferences: { nodeIntegration: true }\n    })\n    win.loadFile('../index.html')\n    if (process.argv.find((arg) => arg === '--debug')) {\n        win.webContents.openDevTools()\n    }\n    win.on('closed', () => {\n        win = null\n    })\n}\n\napp.on('ready', createWindow)\n\napp.on('window-all-closed', () => {\n    if (process.platform !== 'darwin') {\n        app.quit()\n    }\n});\n\napp.on('activate', () => {\n    if (win === null) {\n        createWindow()\n    }\n});\n\n\n//# sourceURL=webpack:///./src/main/index.js?");
 
 /***/ }),
 
@@ -164,9 +115,8 @@ app.on('activate', () => {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("electron");
+eval("module.exports = require(\"electron\");\n\n//# sourceURL=webpack:///external_%22electron%22?");
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=index.js.map

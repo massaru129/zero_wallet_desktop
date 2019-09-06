@@ -21,6 +21,7 @@ const module_settings = {
     }],
 };
 
+console.log(__dirname);
 module.exports = [{
     target: 'electron-main',
     entry: './src/main/index.js',
@@ -30,13 +31,9 @@ module.exports = [{
     mode: "development",
     resolve: resolve,
     module: module_settings,
-    // externals: {
-    //     '../../native': "require('./native')"
-    // },
-    node: {
-        __dirname: false,
-        __filename: false
-    }
+    externals: {
+        '../../zerochain': "require('./zerochain')"
+    },
     }, {
     target: 'electron-renderer',
     entry: './src/renderer/index.tsx',
@@ -46,7 +43,7 @@ module.exports = [{
     mode: "development",
     resolve: resolve,
     module: module_settings,
-    // externals: {
-    //     '../../native': "require('../native')"
-    // }
+    externals: {
+        '../../zerochain': "require('./../zerochain')"
+    }
 }]

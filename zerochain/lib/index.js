@@ -1,2 +1,2 @@
-const addon = require('../native/index.node');
+const addon = require('../native');
 module.exports = addon;
