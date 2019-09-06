@@ -1,10 +1,10 @@
 [package]
-name = "thread-count"
+name = "zerochain"
 version = "0.1.0"
 build = "build.rs"
 
 [lib]
-name = "thread_count"
+name = "zerochain"
 crate-type = ["cdylib"]
 
 [build-dependencies]

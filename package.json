@@ -8,7 +8,7 @@
     "build-rust": "electron-build-env neon build zerochain --release",
     "build": "npm-run-all build-rust build-electron",
     "watch": "webpack --watch",
-    "start": "electron ./src/main.js",
+    "start": "electron ./src/main/index.js",
     "copy-neon-module": "cp -r zerochain node_modules/",
     "postinstall": "yarn copy-neon-module"
   },

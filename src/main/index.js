@@ -2,9 +2,13 @@ const {
     app,
     BrowserWindow
 } = require('electron')
-const zerochain = require('zerochain')
-console.log(zerochain.hoge());
+// const zerochain = require('zerochain')
+// console.log(zerochain.hoge());
 let win
+
+if (module.hot) {
+    module.hot.accept();
+}
 
 function createWindow() {
     win = new BrowserWindow({
@@ -12,7 +16,7 @@ function createWindow() {
         height: 720,
         webPreferences: { nodeIntegration: true }
     })
-    win.loadFile('index.html')
+    win.loadFile('../index.html')
     if (process.argv.find((arg) => arg === '--debug')) {
         win.webContents.openDevTools()
     }
