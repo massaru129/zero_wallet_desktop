@@ -4,9 +4,13 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "webpack",
+    "build-electron": "webpack",
+    "build-rust": "electron-build-env neon build zerochain --release",
+    "build": "npm-run-all build-rust build-electron",
     "watch": "webpack --watch",
-    "start": "electron ./src/main.js"
+    "start": "electron ./src/main.js",
+    "copy-neon-module": "cp -r zerochain node_modules/",
+    "postinstall": "yarn copy-neon-module"
   },
   "repository": {
     "type": "git",
@@ -31,6 +35,9 @@
     "@types/react-redux": "^7.1.2",
     "@types/redux": "^3.6.0",
     "electron": "^6.0.7",
+    "electron-build-env": "^0.2.0",
+    "neon-cli": "^0.3.1",
+    "npm-run-all": "^4.1.5",
     "ts-loader": "^6.0.4",
     "tslint": "^5.19.0",
     "tslint-loader": "^3.5.4",

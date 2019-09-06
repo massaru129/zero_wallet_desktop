@@ -2,7 +2,8 @@ const {
     app,
     BrowserWindow
 } = require('electron')
-
+const zerochain = require('zerochain')
+console.log(zerochain.hoge());
 let win
 
 function createWindow() {
