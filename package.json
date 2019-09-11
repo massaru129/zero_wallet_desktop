@@ -2,14 +2,13 @@
   "name": "zero_wallet_desktop",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "main": "./src/main/index.js",
   "scripts": {
     "build-electron": "webpack",
     "build-rust": "electron-build-env neon build --path zerochain --release",
-    "build": "npm-run-all build-rust build-electron",
-    "watch": "webpack --watch",
-    "start": "electron ./src/main/index.js",
-    "postinstall": "yarn copy-neon-module"
+    "copy-index-html": "cp src/index.html dist/",
+    "build": "npm-run-all build-rust copy-index-html build-electron",
+    "start": "electron ./dist/main/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +21,7 @@
   },
   "homepage": "https://github.com/massaru129/zero_wallet_desktop#readme",
   "dependencies": {
+    "electron-log": "^3.0.7",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
@@ -35,6 +35,8 @@
     "@types/redux": "^3.6.0",
     "electron": "^6.0.7",
     "electron-build-env": "^0.2.0",
+    "electron-builder": "^21.2.0",
+    "electron-packager": "^14.0.5",
     "neon-cli": "^0.3.1",
     "npm-run-all": "^4.1.5",
     "ts-loader": "^6.0.4",

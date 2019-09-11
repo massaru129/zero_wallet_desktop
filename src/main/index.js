@@ -2,9 +2,10 @@ const {
     app,
     BrowserWindow
 } = require('electron')
-const zerochain = require('../../zerochain');
-console.log(zerochain.hoge(), " from main process")
+// const zerochain = require('../../zerochain');
+// console.log(zerochain.hoge(), " from main process")
 
+const log = require('electron-log');
 
 let win
 
@@ -13,13 +14,14 @@ if (module.hot) {
 }
 
 function createWindow() {
+    log.warn("hogehoge");
     win = new BrowserWindow({
         width: 1080,
         height: 720,
         webPreferences: { nodeIntegration: true }
     })
     win.loadFile('../index.html')
-    if (process.argv.find((arg) => arg === '--debug')) {
+    if (process.env == "development") {
         win.webContents.openDevTools()
     }
     win.on('closed', () => {

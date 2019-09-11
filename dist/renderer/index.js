@@ -86,17 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "../../zerochain":
-/*!********************************************!*\
-  !*** external "require('./../zerochain')" ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-eval("module.exports = require('./../zerochain');\n\n//# sourceURL=webpack:///external_%22require('./../zerochain')%22?");
-
-/***/ }),
-
 /***/ "./node_modules/object-assign/index.js":
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
@@ -237,7 +226,7 @@ eval("\n\nif (false) {} else {\n  module.exports = __webpack_require__(/*! ./cjs
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nconst react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\"));\nconst zerochain = __webpack_require__(/*! ../../zerochain */ \"../../zerochain\");\nconst container = document.getElementById('contents');\nreact_dom_1.default.render(react_1.default.createElement(\"p\", null,\n    \"Hello, Zerochain! \",\n    zerochain.hoge()), container);\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi90c3gvIiwic291cmNlcyI6WyJpbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQSxrREFBMEI7QUFDMUIsMERBQWlDO0FBQ2pDLE1BQU0sU0FBUyxHQUFHLE9BQU8sQ0FBQyxpQkFBaUIsQ0FBQyxDQUFDO0FBRTdDLE1BQU0sU0FBUyxHQUFHLFFBQVEsQ0FBQyxjQUFjLENBQUMsVUFBVSxDQUFDLENBQUM7QUFFdEQsbUJBQVEsQ0FBQyxNQUFNLENBQ1g7O0lBQXNCLFNBQVMsQ0FBQyxJQUFJLEVBQUUsQ0FBSyxFQUMzQyxTQUFTLENBQ1osQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgUmVhY3REb20gZnJvbSAncmVhY3QtZG9tJztcbmNvbnN0IHplcm9jaGFpbiA9IHJlcXVpcmUoJy4uLy4uL3plcm9jaGFpbicpO1xuXG5jb25zdCBjb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY29udGVudHMnKTtcblxuUmVhY3REb20ucmVuZGVyKFxuICAgIDxwPkhlbGxvLCBaZXJvY2hhaW4hIHt6ZXJvY2hhaW4uaG9nZSgpfTwvcD4sXG4gICAgY29udGFpbmVyLFxuKTtcbiJdfQ==\n\n//# sourceURL=webpack:///./src/renderer/index.tsx?");
+eval("\nvar __importDefault = (this && this.__importDefault) || function (mod) {\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\n};\nObject.defineProperty(exports, \"__esModule\", { value: true });\nconst react_1 = __importDefault(__webpack_require__(/*! react */ \"./node_modules/react/index.js\"));\nconst react_dom_1 = __importDefault(__webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\"));\n// const zerochain = require('../../zerochain');\nconst container = document.getElementById('contents');\nreact_dom_1.default.render(react_1.default.createElement(\"p\", null, \"Hello, Zerochain!\"), container);\n//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiLi90c3gvIiwic291cmNlcyI6WyJpbmRleC50c3giXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBQSxrREFBMEI7QUFDMUIsMERBQWlDO0FBQ2pDLGdEQUFnRDtBQUVoRCxNQUFNLFNBQVMsR0FBRyxRQUFRLENBQUMsY0FBYyxDQUFDLFVBQVUsQ0FBQyxDQUFDO0FBRXRELG1CQUFRLENBQUMsTUFBTSxDQUNYLDZEQUF3QixFQUN4QixTQUFTLENBQ1osQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCc7XG5pbXBvcnQgUmVhY3REb20gZnJvbSAncmVhY3QtZG9tJztcbi8vIGNvbnN0IHplcm9jaGFpbiA9IHJlcXVpcmUoJy4uLy4uL3plcm9jaGFpbicpO1xuXG5jb25zdCBjb250YWluZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY29udGVudHMnKTtcblxuUmVhY3REb20ucmVuZGVyKFxuICAgIDxwPkhlbGxvLCBaZXJvY2hhaW4hPC9wPixcbiAgICBjb250YWluZXIsXG4pO1xuIl19\n\n//# sourceURL=webpack:///./src/renderer/index.tsx?");
 
 /***/ })
 
