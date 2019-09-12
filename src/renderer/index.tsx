@@ -15,8 +15,8 @@ import Settings from './components/settings';
 
 const routes = [
     {
-        exact: true,
         component: Dashboard,
+        exact: true,
         path: '/',
     },
     {
