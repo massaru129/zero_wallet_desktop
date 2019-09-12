@@ -30,9 +30,9 @@ module.exports = [{
     mode: "development",
     resolve: resolve,
     module: module_settings,
-    // externals: {
-    //     '../../zerochain': "require('./zerochain')"
-    // },
+    externals: {
+        '../../zerochain': "require('./../../zerochain')"
+    },
     }, {
     target: 'electron-renderer',
     entry: './src/renderer/index.tsx',
@@ -42,7 +42,7 @@ module.exports = [{
     mode: "development",
     resolve: resolve,
     module: module_settings,
-    // externals: {
-    //     '../../zerochain': "require('./../zerochain')"
-    // }
+    externals: {
+        '../../zerochain': "require('./../../zerochain')"
+    }
 }]

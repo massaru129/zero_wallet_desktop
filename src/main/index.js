@@ -3,8 +3,8 @@ const {
     BrowserWindow,
     Menu,
 } = require('electron')
-// const zerochain = require('../../zerochain');
-// console.log(zerochain.hoge(), " from main process")
+const zerochain = require('../../zerochain');
+console.log(zerochain.hoge(), " from main process")
 
 const log = require('electron-log');
 

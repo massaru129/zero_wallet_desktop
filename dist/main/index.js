@@ -86,6 +86,17 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "../../zerochain":
+/*!***********************************************!*\
+  !*** external "require('./../../zerochain')" ***!
+  \***********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = require('./../../zerochain');\n\n//# sourceURL=webpack:///external_%22require('./../../zerochain')%22?");
+
+/***/ }),
+
 /***/ "./node_modules/electron-log/index.js":
 /*!********************************************!*\
   !*** ./node_modules/electron-log/index.js ***!
@@ -237,7 +248,7 @@ eval("\n\nvar electron;\ntry {\n  electron = __webpack_require__(/*! electron */
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const {\n    app,\n    BrowserWindow,\n    Menu,\n} = __webpack_require__(/*! electron */ \"electron\")\n// const zerochain = require('../../zerochain');\n// console.log(zerochain.hoge(), \" from main process\")\n\nconst log = __webpack_require__(/*! electron-log */ \"./node_modules/electron-log/index.js\");\n\nlet win\n\nif (false) {}\n\nfunction createWindow() {\n    log.warn(\"hogehoge\");\n    win = new BrowserWindow({\n        width: 1080,\n        height: 720,\n        webPreferences: { nodeIntegration: true }\n    })\n    win.loadFile('../index.html')\n    if (process.env == \"development\") {\n        win.webContents.openDevTools()\n    }\n    win.on('closed', () => {\n        win = null\n    })\n    const template = [\n        {\n          label: 'General',\n          submenu: [\n            { label: 'Reload', accelerator: 'CmdOrCtrl+R', role: 'reload' },  // not working...\n            { label: 'Quit', accelerator: 'CmdOrCtrl+Q', role: 'quit' },\n          ],\n        },\n        {\n          label: 'Edit',\n          submenu: [\n            { label: 'Copy', accelerator: 'CmdOrCtrl+C', role: 'copy' },\n            { label: 'Paste', accelerator: 'CmdOrCtrl+V', role: 'paste' },\n            { label: 'Cut', accelerator: 'CmdOrCtrl+X', role: 'cut' },\n            { label: 'Select All', accelerator: 'CmdOrCtrl+A', role: 'selectall' },\n          ],\n        },\n      ];\n      Menu.setApplicationMenu(Menu.buildFromTemplate(template));\n}\n\napp.on('ready', createWindow)\n\napp.on('window-all-closed', () => {\n    if (process.platform !== 'darwin') {\n        app.quit()\n    }\n});\n\napp.on('activate', () => {\n    if (win === null) {\n        createWindow()\n    }\n});\n\n\n//# sourceURL=webpack:///./src/main/index.js?");
+eval("const {\n    app,\n    BrowserWindow,\n    Menu,\n} = __webpack_require__(/*! electron */ \"electron\")\nconst zerochain = __webpack_require__(/*! ../../zerochain */ \"../../zerochain\");\nconsole.log(zerochain.hoge(), \" from main process\")\n\nconst log = __webpack_require__(/*! electron-log */ \"./node_modules/electron-log/index.js\");\n\nlet win\n\nif (false) {}\n\nfunction createWindow() {\n    log.warn(\"hogehoge\");\n    win = new BrowserWindow({\n        width: 1080,\n        height: 720,\n        webPreferences: { nodeIntegration: true }\n    })\n    win.loadFile('../index.html')\n    if (process.env == \"development\") {\n        win.webContents.openDevTools()\n    }\n    win.on('closed', () => {\n        win = null\n    })\n    const template = [\n        {\n          label: 'General',\n          submenu: [\n            { label: 'Reload', accelerator: 'CmdOrCtrl+R', role: 'reload' },  // not working...\n            { label: 'Quit', accelerator: 'CmdOrCtrl+Q', role: 'quit' },\n          ],\n        },\n        {\n          label: 'Edit',\n          submenu: [\n            { label: 'Copy', accelerator: 'CmdOrCtrl+C', role: 'copy' },\n            { label: 'Paste', accelerator: 'CmdOrCtrl+V', role: 'paste' },\n            { label: 'Cut', accelerator: 'CmdOrCtrl+X', role: 'cut' },\n            { label: 'Select All', accelerator: 'CmdOrCtrl+A', role: 'selectall' },\n          ],\n        },\n      ];\n      Menu.setApplicationMenu(Menu.buildFromTemplate(template));\n}\n\napp.on('ready', createWindow)\n\napp.on('window-all-closed', () => {\n    if (process.platform !== 'darwin') {\n        app.quit()\n    }\n});\n\napp.on('activate', () => {\n    if (win === null) {\n        createWindow()\n    }\n});\n\n\n//# sourceURL=webpack:///./src/main/index.js?");
 
 /***/ }),
 
