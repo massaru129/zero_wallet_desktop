@@ -11,8 +11,6 @@ import Recieve from './components/recieve';
 import Send from './components/send';
 import Settings from './components/settings';
 
-// const zerochain = require('../../zerochain');
-
 const routes = [
     {
         component: Dashboard,
@@ -33,7 +31,7 @@ const routes = [
     },
   ];
 
-class SidebarExample extends React.Component {
+class ZerochainWalletApp extends React.Component {
     public render() {
         return (
             <Router>
@@ -65,6 +63,6 @@ class SidebarExample extends React.Component {
 const container = document.getElementById('contents');
 
 ReactDom.render(
-    new SidebarExample({}).render(),
+    new ZerochainWalletApp({}).render(),
     container,
 );

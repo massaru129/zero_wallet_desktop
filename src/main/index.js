@@ -3,8 +3,6 @@ const {
     BrowserWindow,
     Menu,
 } = require('electron')
-const zerochain = require('../../zerochain');
-console.log(zerochain.hoge(), " from main process")
 
 const log = require('electron-log');
 
@@ -22,9 +20,10 @@ function createWindow() {
         webPreferences: { nodeIntegration: true }
     })
     win.loadFile('../index.html')
-    if (process.env == "development") {
-        win.webContents.openDevTools()
-    }
+    // if (process.env == "development") {
+    //     win.webContents.openDevTools()
+    // }
+    win.webContents.openDevTools()
     win.on('closed', () => {
         win = null
     })
