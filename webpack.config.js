@@ -43,6 +43,6 @@ module.exports = [{
     resolve: resolve,
     module: module_settings,
     externals: {
-        '../../zerochain': "require('./../../zerochain')"
+        'zerochain': "require('/Users/masaru/LOGICA/layerx/zerochain/zero_wallet_desktop/zerochain')"
     }
 }]
