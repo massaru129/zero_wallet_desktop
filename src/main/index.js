@@ -4,8 +4,6 @@ const {
     Menu,
 } = require('electron')
 
-const log = require('electron-log');
-
 let win
 
 if (module.hot) {
@@ -13,7 +11,6 @@ if (module.hot) {
 }
 
 function createWindow() {
-    log.warn("hogehoge");
     win = new BrowserWindow({
         width: 1080,
         height: 720,
