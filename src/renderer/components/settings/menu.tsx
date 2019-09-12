@@ -21,6 +21,9 @@ export default class SettingsMenu extends React.Component<ISettingsProps> {
           <li>
             <Link to={`${params.url}/recovery`}>Recovery</Link>
           </li>
+          <li>
+            <Link to={`${params.url}/create-wallet`}>Create Wallet</Link>
+          </li>
         </ul>
       </div>
     );
