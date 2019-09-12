@@ -1,6 +1,7 @@
 const {
     app,
-    BrowserWindow
+    BrowserWindow,
+    Menu,
 } = require('electron')
 // const zerochain = require('../../zerochain');
 // console.log(zerochain.hoge(), " from main process")
@@ -27,6 +28,25 @@ function createWindow() {
     win.on('closed', () => {
         win = null
     })
+    const template = [
+        {
+          label: 'General',
+          submenu: [
+            { label: 'Reload', accelerator: 'CmdOrCtrl+R', role: 'reload' },  // not working...
+            { label: 'Quit', accelerator: 'CmdOrCtrl+Q', role: 'quit' },
+          ],
+        },
+        {
+          label: 'Edit',
+          submenu: [
+            { label: 'Copy', accelerator: 'CmdOrCtrl+C', role: 'copy' },
+            { label: 'Paste', accelerator: 'CmdOrCtrl+V', role: 'paste' },
+            { label: 'Cut', accelerator: 'CmdOrCtrl+X', role: 'cut' },
+            { label: 'Select All', accelerator: 'CmdOrCtrl+A', role: 'selectall' },
+          ],
+        },
+      ];
+      Menu.setApplicationMenu(Menu.buildFromTemplate(template));
 }
 
 app.on('ready', createWindow)
