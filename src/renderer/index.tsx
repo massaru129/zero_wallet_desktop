@@ -40,10 +40,10 @@ class SidebarExample extends React.Component {
             <div style={{ display: 'flex' }}>
                 <div style={{padding: '10px', width: '30%', background: '#f0f0f0'}}>
                     <ul style={{ listStyleType: 'none', padding: 0 }}>
-                        <li><Link to='/'>Dashboard</Link></li>
-                        <li><Link to='/Send'>Send</Link></li>
-                        <li><Link to='/Recieve'>Recieve</Link></li>
-                        <li><Link to='/Settings'>Settings</Link></li>
+                        <li><Link to="/">Dashboard</Link></li>
+                        <li><Link to="/send">Send</Link></li>
+                        <li><Link to="/recieve">Recieve</Link></li>
+                        <li><Link to="/settings">Settings</Link></li>
                     </ul>
                 </div>
 

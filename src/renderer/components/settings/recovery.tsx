@@ -1,10 +1,10 @@
-import React from 'react';
 import {
-  History
+  History,
 } from 'history';
+import React from 'react';
 
 interface ICreateWallet {
-  history: History
+  history: History;
 }
 
 export default class Recovery extends React.Component<ICreateWallet> {

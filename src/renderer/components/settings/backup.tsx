@@ -1,10 +1,10 @@
-import React from 'react';
 import {
-  History
+  History,
 } from 'history';
+import React from 'react';
 
 interface IBackup {
-  history: History
+  history: History;
 }
 
 export default class Backup extends React.Component<IBackup> {
